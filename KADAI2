@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    int k=2;
+    int t=2;
+    int same=t+k;
+    printf("How many people?");
+    printf("How　many　animal?");
+    scanf("%d", &k);
+    scanf("%d",&t);
+    printf("The number of people is %d" , k);
+    printf("The　number of animal is %d",t);
+    return 0;
+}
