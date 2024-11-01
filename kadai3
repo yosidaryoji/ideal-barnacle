@@ -4,11 +4,11 @@
 
 int main(void)
 {
-    printf("float型の最大値:%g\n",FLT_MAX);
-    printf("float型の最小値:%g\n",FLT_MIN);
-    printf("float型の精度:%d\n",FLT_DIG);
-    printf("long double型の最大値:%d\n",LDBL_MAX);
-    printf("long double型の最小値:%d\n",LDBL_MIN);
+    printf("float型の最大値:%f\n",FLT_MAX);
+    printf("float型の最小値:%f\n",FLT_MIN);
+    printf("float型の精度:%f\n",FLT_DIG);
+    printf("long double型の最大値:%lli\n",LDBL_MAX);
+    printf("long double型の最小値:%lli\n",LDBL_MIN);
    
     return 0;
     
