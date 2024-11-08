@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+    int k;
+    printf("How many students?");
+    scanf("%d",&k);
+    if (k>=50)
+    {
+        printf("There are many students！");
+    
+}
+else if(50>k>20)
+{
+    printf("There are few students！");
+    
+}
+else (k=0);
+{
+    printf("There are no student");
+}
+    return 0;
+}
