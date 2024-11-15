@@ -9,7 +9,7 @@ int main()
         printf("There are many students！");
     
 }
-else if(50>k>20)
+else if(50>k>0)
 {
     printf("There are few students！");
     
