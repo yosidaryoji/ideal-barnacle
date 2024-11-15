@@ -1,0 +1,27 @@
+int main(void)
+{
+    int Taro,Hanako,Jiro;
+    
+    Taro=20; //tarouの年齢
+    Hanako=50; //hanakoの年齢
+    Jiro=20; //jiroの年齢
+    
+    //変数と定数の比較
+    if(Taro==20)
+    printf("Taroは20歳です。");
+    if(Hanako !=20)
+    printf("Hanakoは２０歳ではありません\n");
+    if(Hanako>=20)
+    printf("Hanakoは20歳以上です\n");
+    if(Jiro<20)
+    printf("Jiroは２０歳未満です\n");
+    
+    //変数と変数の比較
+    
+    if(Taro>Jiro)
+    printf("TaroはJiroより年上です\n");
+    if(Hanako>Taro)
+    printf("HanakoはTaroより年上です\n");
+
+    return 0;
+}
