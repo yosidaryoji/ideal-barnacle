@@ -1,0 +1,45 @@
+
+#include <stdio.h>
+#include <string.h> 
+#include <ctype.h> 
+
+int main() 
+{
+       char str[100];
+       printf("パスワードを入力してください。\n");
+    scanf("%s",str);
+    int length = 0;
+    length = strlen(str);
+    int has_upper = 0, has_lower = 0;
+    for (int i = 0; i < length; i++) 
+    {
+        if (isupper(str[i])) 
+        {
+            has_upper = 1;
+        }
+        if (islower(str[i])) 
+        {
+            has_lower = 1;
+        }
+    }
+    if (length < 8) 
+    {
+        printf("パスワードは8文字以上にしてください。\n");
+    }
+    if (!has_upper) 
+    {
+        printf("大文字を含めるようにしてください。\n");
+    }
+    if (!has_lower) 
+    {
+        printf("小文字を含めるようにしてください。\n");
+    }
+    if (length >= 8 & has_upper & has_lower) {
+        printf("このパスワードは安全です。\n");
+    } else {
+        printf("パスワードを入力しなおしてください。\n");
+    }
+
+    return 0;
+}
+
