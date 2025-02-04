@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() 
+{
+    int number, answer=0;
+    
+    srand(time(0));
+    number = rand() % 100 + 1; 
+
+    printf("1から100の数字を当ててください\n");
+    while(number != answer)
+    {
+        printf("A, ");
+        scanf("%d", &answer);
+        
+        if (answer > number) 
+        {
+            printf("答えより高いです\n");
+            
+        } 
+        else if (answer < number) 
+        {
+            printf("答えより低いです\n");
+        } 
+        else 
+        {
+            printf("正解です。。\n");
+        }
+    }
+    
+    return 0;
+}
